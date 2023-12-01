@@ -40,7 +40,7 @@ h2 {
     height: auto;
 }
 
-.btn {
+.gtn {
     display: block;
     width: 200px;
     height: 50px;
@@ -54,13 +54,13 @@ h2 {
     text-decoration: none;
 }
 
-.btn:hover {
+.gtn:hover {
     background-color: #45a049;
 }
 </style>
 <?php
 require "modules/checkout/models/checkoutModel.php";
-echo "<h2>Đặt Hàng Thành Công ✓</h2>";
+echo "<h2>ㅤㅤĐặt Hàng Thành Công ✓</h2>";
 
 function inHoaDon() {
     $donhang = danhsachdonhang();
@@ -86,7 +86,7 @@ function inHoaDon() {
             max-width: 200px;
             height: auto;
         }
-        .btn {
+        .gtn {
     display: block;
     width: 200px;
     height: 50px;
@@ -100,7 +100,7 @@ function inHoaDon() {
     text-decoration: none; 
 }
 
-.btn:hover {
+.gtn:hover {
     background-color: #45a049; 
 }
 
@@ -121,7 +121,7 @@ function inHoaDon() {
             <p><strong>Số Lượng: </strong><?=$chitietdonhang['so_luong']?></p><br>
         </div>
         <div>
-            <h3>ㅤㅤㅤChi Tiết Giỏ Hàng</h3></p><br>
+            <h3>ㅤChi Tiết Giỏ Hàng</h3></p><br>
             
             <p><strong>ㅤㅤ</strong><img src="admin/assets/img/products/<?=$chitietdonhang['hinh_anh']?>" alt=''></p><br>
             <p><strong>Sản Phẩm: </strong><?=$chitietdonhang['ten']?></p><br>
@@ -141,7 +141,7 @@ function inHoaDon() {
 
 inHoaDon();
 ?>
-<a href="index.php" class="btn font-baloo">Tiếp Tục Mua Sắm</a>
+<a href="index.php" class="gtn font-baloo">Tiếp Tục Mua Sắm</a>
 <?php
 getFooter("layout/footer.php");
 ?>
