@@ -206,16 +206,19 @@ function setStatusPayment($status)
   $str = "";
   switch ($status) {
     case 1:
-      $str = "Chưa thanh toán";
+      $str = "Chờ Xử Lí ...";
       break;
     case 2:
-      $str = "Đã thanh toán";
+      $str = "Chờ Lấy Hàng ...";
       break;
     case 3:
-      $str = "Đã nhận";
+      $str = "Đang Giao Hàng ...";
+      break;
+    case 4:
+      $str = "Đã nhận hàng ✓ ";
       break;
     default:
-      $str = "";
+      $str = "Chờ thanh toán";
       break;
   }
   return $str;

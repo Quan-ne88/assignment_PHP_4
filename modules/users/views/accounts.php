@@ -118,6 +118,7 @@ if (!empty(setNameForUser())) {
             <th>Địa Chỉ</th>
             <th>Trạng thái</th>
             <th>Ngày đặt hàng</th>
+            <th></th>
             
           </tr>
         </thead>

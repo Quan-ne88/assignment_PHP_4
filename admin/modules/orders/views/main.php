@@ -20,8 +20,7 @@ $listOrders = getListOrders();
                 <table id="example" class="table table-striped data-table" style="width: 100%">
                   <thead>
                     <tr>
-                      <th>ID đơn hàng</th>
-                     
+                      <th>ID đơn hàng</th>       
                       <th>Ngày đặt</th>
                       <th>Họ và tên</th>
                       <th>Email</th>
@@ -35,7 +34,6 @@ $listOrders = getListOrders();
                     ?>
                         <tr>
                           <td><?php echo $item['id'] ?></td>
-                     
                           <td><?php echo $item['tao_ngay'] ?></td>
                           <td><?php echo $item['ho_va_ten'] ?></td>
                           <td><?php echo $item['email'] ?></td>

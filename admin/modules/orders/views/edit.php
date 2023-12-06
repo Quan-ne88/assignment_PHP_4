@@ -49,18 +49,25 @@ if (isset($_POST['editOrder'])) {
                       <div class="mb-3">
                         <label for="status" class="form-label">Trạng thái</label>
                         <select name="status" id="status" class="form-control">
-                          <option value="1" <?php echo $select = (int)$orderInfo['trang_thai'] === 1 ? "selected" : ""; ?>>Chưa thanh toán</option>
-                          <option value="2" <?php echo $select = (int)$orderInfo['trang_thai'] === 2 ? "selected" : ""; ?>>Đã thanh toán</option>
-                          <option value="3" <?php echo $select = (int)$orderInfo['trang_thai'] === 3 ? "selected" : ""; ?>>Đã nhận hàng</option>
+                        <option value="1" <?php echo $select = (int)$orderInfo['trang_thai'] === 1 ? "selected" : ""; ?>>Đơn hàng mới ... </option>
+                        <option value="2" <?php echo $select = (int)$orderInfo['trang_thai'] === 2 ? "selected" : ""; ?>>Chờ Xử Lí ... </option>
+                          <option value="3" <?php echo $select = (int)$orderInfo['trang_thai'] === 3 ? "selected" : ""; ?>>Đang chuẩn bị hàng ... </option>
+                          <option value="4" <?php echo $select = (int)$orderInfo['trang_thai'] === 4 ? "selected" : ""; ?>>Chờ Lấy Hàng ...</option>
+                          <option value="5" <?php echo $select = (int)$orderInfo['trang_thai'] === 5 ? "selected" : ""; ?>>Đang Giao Hàng ... </option>
+                          <option value="6" <?php echo $select = (int)$orderInfo['trang_thai'] === 6 ? "selected" : ""; ?>>Đã nhận hàng ✓ </option>
+                          <option value="7" <?php echo $select = (int)$orderInfo['trang_thai'] === 7 ? "selected" : ""; ?>>Đã thanh toán </option>
                         </select>
                         <?php echo form_error("status") ?>
                       </div>
+                      
                       <div class="mb-3">
                         <?php echo form_error("update") ?>
                         <?php echo notify("update") ?>
                       </div>
                       <div class="mb-3">
-                        <input type="submit" value="Cập nhật" class="btn btn-primary" name="editOrder">
+                        <input type="submit" value="Cập nhật" class="btn btn-primary" name="editOrder"><br><br>
+                        <div><a  class="btn btn-primary" href="?mod=orders&act=main">Quay Lại </a></div>
+                        
                       </div>
                     <?php } ?>
                   </form>

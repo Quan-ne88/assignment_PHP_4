@@ -7,13 +7,16 @@ function getStatusPayment($status)
   $status = intval($status);
   switch ($status) {
     case 1:
-      $str = "Chờ thanh toán";
+      $str = "Chờ Xử Lí ...";
       break;
     case 2:
-      $str = "Đã thanh toán";
+      $str = "Chờ Lấy Hàng ...";
       break;
     case 3:
-      $str = "Đã nhận hàng";
+      $str = "Đang Giao Hàng ...";
+      break;
+    case 4:
+      $str = "Đã nhận hàng ✓ ";
       break;
     default:
       $str = "Chờ thanh toán";
@@ -74,4 +77,5 @@ function updateOrder($fullname, $email, $phone, $address, $status, $id)
       $error['update'] = "Cập nhật thất bại";
     }
   }
+  
 }
