@@ -127,7 +127,7 @@ function inHoaDon() {
             <p><strong>Sản Phẩm: </strong><?=$chitietdonhang['ten']?></p><br>
         </div>
         <div>
-            <h3>Thông Tin Đặt Hàng </h3></p><br>
+<h3>Thông Tin Đặt Hàng </h3></p><br>
 <p><strong>Người đặt hàng:</strong> <?=$donhang['ho_va_ten']?></p><br>
             <p><strong>Địa chỉ:</strong> <?=$donhang['dia_chi']?></p><br>
             <p><strong>Email:</strong> <?=$donhang['email']?></p><br>

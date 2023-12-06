@@ -53,7 +53,7 @@ $listCategory = getListCategory();
                                                         </a>
                                                     </td>
                                                     <td>
-                                                        <a href="?mod=category&act=delete&id=<?php echo $item['id'] ?>" title="Xóa danh mục">
+                                                        <a href="?mod=category&act=del&id=<?php echo $item['id'] ?>" title="Xóa danh mục">
                                                             <i class="fas fa-trash"></i>
                                                         </a>
                                                     </td>
